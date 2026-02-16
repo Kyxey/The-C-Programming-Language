@@ -1,2 +1,6 @@
 # OS files
 .DS_Store
+
+# Build files
+**/*/*.out
+**/*/*.h.pch

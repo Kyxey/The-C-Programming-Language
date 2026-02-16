@@ -24,17 +24,17 @@ int main()
 
     // read the input chars and save them in the array
     while ((c = getchar()) != EOF) {
-        lengths[c - 31] += 1;
+        lengths[c - 32] += 1;
     }
 
     // print the horizontal histogram
-    counter = 1;
+    counter = 0;
     while (counter < LENGTH_SIZE) {
         uint8_t const current_length_count = lengths[counter];
 
         if (current_length_count > 0) {
             int16_t line_counter = 1;
-            printf("Length of \"%c\":\t", counter + 31);
+            printf("Length of \"%c\":\t", counter + 32);
 
             // print the bar
             while (line_counter <= current_length_count) {
@@ -76,7 +76,7 @@ int main()
                 uint8_t const current_length_count = lengths[column_counter];
 
                 if (current_length_count > 0) {
-                    printf("\"%c\"\t  ", column_counter + 31);
+                    printf("\"%c\"\t  ", column_counter + 32);
                 }
                 ++column_counter;
             }
