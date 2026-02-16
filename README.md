@@ -12,7 +12,7 @@ This repository contains the answers to the exercises that are included inside T
 
 ## Chapters
 
-[Chapter 1. A Tutorial Introduction]("./Chapter-1")
+[Chapter 1. A Tutorial Introduction]("/Chapter-1")
 
 ## Todo
 
